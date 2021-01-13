@@ -1,0 +1,106 @@
+.main__slider {
+  margin-bottom: 4rem;
+
+  .slider__wrap {
+    margin: 6rem 0 0 0;
+  }
+
+  .splide__arrow {
+    display: none;
+  }
+
+  .splide__pagination {
+    bottom: -6.4rem;
+  }
+
+  .splide__pagination__page {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin: 4.6rem;
+    background: $grey;
+  }
+
+  .splide__pagination__page.is-active {
+    background: $dark;
+    transform: none;
+  }
+
+  .person__data {
+    margin-bottom: 6rem;
+  }
+
+  .person__img {
+    position: relative;
+    width: 17rem;
+    height: 17rem;
+    margin: 3rem auto;
+    background: $grey;
+    border-radius: 50%;
+  }
+
+  .person__dott-line {
+    position: absolute;
+    top: -1.6rem;
+    left: -1.6rem;
+    width: 20.2rem;
+    height: 20.2rem;
+    background: url('../img/main/dashed.png')  0 0 / contain no-repeat;
+  }
+
+  .person__circle {
+    position: absolute;
+    z-index: -1;
+    top: -2rem;
+    left: 3.4rem;
+    width: 17rem;
+    height: 17rem;
+    background: $yellow;
+    border-radius: 50%;
+  }
+
+  .person__name {
+    margin-bottom: 2rem;
+    font-size: 2.1rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+}
+
+
+@include media992px {
+  .main__slider {
+    .slider__wrap {
+      margin: 6rem 8rem 0 8rem;
+    }
+
+    .splide__pagination__page {
+      width: 1.8rem;
+      height: 1.8rem;
+      margin: 2.6rem;
+    }
+  }
+}
+
+
+@include media768px {
+  .main__slider {
+    .slider__wrap {
+      margin: 6rem 4rem 0 4rem;
+    }
+  }
+}
+
+
+@include media480px {
+  .main__slider {
+    .splide__pagination {
+      bottom: 0;
+    }
+
+    .splide__pagination__page {
+      width: 1.2rem;
+      height: 1.2rem;
+      margin: 0.6rem;
+    }
+  }
+}

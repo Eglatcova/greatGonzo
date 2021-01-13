@@ -1,0 +1,125 @@
+
+.main__header {
+  .header__wrap {
+    position: relative;
+    height: 41.8rem;
+    padding: 3rem;
+    background: $yellow url('../img/main/icons.png')  0 0 / contain no-repeat;
+    background-origin: content-box;
+  }
+
+  .header__dotter-line {
+    position: absolute;
+    top: 33rem;
+    left: -18.6rem;
+    width: 90rem;
+    height: 40rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .header__date {
+    position: absolute;
+    top: 6.5rem;
+    left: 13.2rem;
+    font-size: 2.16rem;
+    line-height: 2rem;
+  }
+
+  .header__title {
+    position: absolute;
+    right: 0;
+    bottom: 16.5rem;
+    left: 0;
+    margin: auto;
+    animation: fadeInLeft 1s both;
+    color: $dark;
+    font-family: 'OCRF-Bold', sans-serif;
+    font-size: 7.6rem;
+    letter-spacing: -0.4rem;
+    text-align: center;
+
+    span {
+      color: $dark;
+      font-family: 'OCRF-Regular', sans-serif;
+      font-size: 7.6rem;
+      letter-spacing: -0.4rem;
+    }
+  }
+
+  .header__info {
+    position: absolute;
+    right: 0;
+    bottom: 11.5rem;
+    left: 0;
+    margin: auto;
+    animation: fadeInRight 1s 0.5s both;
+    color: $dark;
+    font-size: 2.14rem;
+    text-align: center;
+  }
+}
+
+@include media992px {
+  .main__header {
+    .header__wrap {
+      background-size: cover;
+    }
+
+    .header__dotter-line {
+      display: none;
+    }
+
+    .header__date {
+      top: 6.7rem;
+      left: 13.5rem;
+    }
+
+    .header__title {
+      bottom: 13.5rem;
+    }
+
+    .header__info {
+      bottom: 8.5rem;
+    }
+  }
+}
+
+@include media768px {
+  .main__header {
+    .header__wrap {
+      height: 38rem;
+    }
+
+    .header__date {
+      top: 5.9rem;
+      left: 12.2rem;
+      font-size: 1.9em;
+    }
+
+    .header__title {
+      bottom: 12.5rem;
+    }
+
+    .header__info {
+      bottom: 7.5rem;
+    }
+  }
+}
+
+@include media480px {
+  .main__header {
+    .header__title {
+      bottom: 11rem;
+      padding-bottom: 1rem;
+      background: white;
+    }
+
+    .header__info {
+      bottom: 4.2rem;
+      font-size: 2.4rem;
+    }
+  }
+}

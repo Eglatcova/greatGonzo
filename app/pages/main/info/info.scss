@@ -1,0 +1,72 @@
+.main__info {
+  .info__wrap {
+    margin: 6rem 3.6rem 0 12rem;
+  }
+
+  .info__block {
+    padding: 2.8rem 2.8rem;
+    background: $yellow;
+    border-radius: 3rem;
+
+    &_2 {
+      margin-top: 1.6rem;
+    }
+  }
+
+  .info__text {
+    position: relative;
+    font-size: 2.04rem;
+    line-height: 2.1rem;
+
+    &_marked {
+      position: relative;
+      z-index: 2;
+      color: white;
+      font-family: 'OCRF-Regular', 'Roboto-Regular', sans-serif;
+      font-size: 2rem;
+    }
+  }
+
+
+  .info__text_marker {
+    position: absolute;
+    top: 0;
+    height: 2.5rem;
+    background: black;
+
+    &_1 {
+      left: -32.9rem;
+      width: 43.2rem;
+    }
+
+    &_2 {
+      left: -33.1rem;
+      width: 43rem;
+    }
+  }
+}
+
+
+@include media480px {
+  .main__info {
+    .info__wrap {
+      margin: 6rem 6rem 0 6rem;
+    }
+
+    .info__text {
+      line-height: 2.4rem;
+    }
+
+    .info__text_marker {
+      &_1 {
+        left: -12.7rem;
+        width: 23.2rem;
+      }
+
+      &_2 {
+        left: -13rem;
+        width: 23rem;
+      }
+    }
+  }
+}
